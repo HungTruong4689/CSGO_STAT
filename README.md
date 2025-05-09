@@ -33,6 +33,7 @@ A modern, responsive dashboard built with **React**, **TypeScript**, **Vite**, *
 
 ## 📂 Project Structure
 
+```txt
 src/
 ├── components/
 │ ├── PlayerStatsTable.tsx
@@ -43,8 +44,7 @@ src/
 └── index.css
 public/
 └── NAVIvsVitaGF-Nuke.txt
-
----
+```
 
 ## 🧪 How to Run Locally
 
