@@ -1,54 +1,93 @@
-# React + TypeScript + Vite
+# 🧠 CS:GO Match Statistics Dashboard
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+A modern, responsive dashboard built with **React**, **TypeScript**, **Vite**, **Tailwind CSS**, and **Chart.js** to visualize round-by-round statistics from a real **CS:GO professional match log**.
 
-Currently, two official plugins are available:
+🔗 **Live demo:** [csgo-stat.vercel.app](https://csgo-stat-git-main-hung-truongs-projects.vercel.app/)
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+---
 
-## Expanding the ESLint configuration
+## 🚀 Features
 
-If you are developing a production application, we recommend updating the configuration to enable type-aware lint rules:
+- 📈 **Scoreboard Over Time** – Round-by-round CT/T score progression
+- 🔫 **Player Statistics Table** with:
+  - Kills / Deaths
+  - Headshots
+  - Damage Dealt
+  - Team badge (CT or TERRORIST)
+  - MVP highlight (★)
+- 📊 **First Half vs Second Half Breakdown with winner**
+- 💡 Responsive and mobile-optimized
+- ☁️ Vercel-ready deployment
 
-```js
-export default tseslint.config({
-  extends: [
-    // Remove ...tseslint.configs.recommended and replace with this
-    ...tseslint.configs.recommendedTypeChecked,
-    // Alternatively, use this for stricter rules
-    ...tseslint.configs.strictTypeChecked,
-    // Optionally, add this for stylistic rules
-    ...tseslint.configs.stylisticTypeChecked,
-  ],
-  languageOptions: {
-    // other options...
-    parserOptions: {
-      project: ['./tsconfig.node.json', './tsconfig.app.json'],
-      tsconfigRootDir: import.meta.dirname,
-    },
-  },
-})
+---
+
+## 📦 Technologies Used
+
+- [Vite](https://vitejs.dev/) + React + TypeScript
+- [Tailwind CSS](https://tailwindcss.com/)
+- [Chart.js](https://www.chartjs.org/) via `react-chartjs-2`
+- [ESLint + Prettier](https://eslint.org/)
+- [Vercel](https://vercel.com/)
+
+---
+
+## 📂 Project Structure
+
+src/
+├── components/
+│ ├── PlayerStatsTable.tsx
+│ └── ScoreboardChart.tsx
+├── utils/
+│ └── parser.ts
+├── App.tsx
+└── index.css
+public/
+└── NAVIvsVitaGF-Nuke.txt
+
+---
+
+## 🧪 How to Run Locally
+
+# 1. Clone this repo
+
+```bash
+git clone https://github.com/HungTruong4689/CSGO_STAT.git
+cd CSGO_STAT
 ```
 
-You can also install [eslint-plugin-react-x](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-x) and [eslint-plugin-react-dom](https://github.com/Rel1cx/eslint-react/tree/main/packages/plugins/eslint-plugin-react-dom) for React-specific lint rules:
+# 2. Install dependencies
 
-```js
-// eslint.config.js
-import reactX from 'eslint-plugin-react-x'
-import reactDom from 'eslint-plugin-react-dom'
-
-export default tseslint.config({
-  plugins: {
-    // Add the react-x and react-dom plugins
-    'react-x': reactX,
-    'react-dom': reactDom,
-  },
-  rules: {
-    // other rules...
-    // Enable its recommended typescript rules
-    ...reactX.configs['recommended-typescript'].rules,
-    ...reactDom.configs.recommended.rules,
-  },
-})
+```bash
+npm install
 ```
+
+# 3. Run locally
+
+```bash
+npm run dev
+```
+
+# 4. Open http://localhost:5173 in your browser
+
+## 🌐 Deployment
+
+This project is deployed on Vercel:  
+🔗 [https://csgo-stat-git-main-hung-truongs-projects.vercel.app/](https://csgo-stat-git-main-hung-truongs-projects.vercel.app/)
+
+To deploy your own version, click below:
+
+[![Deploy to Vercel](https://vercel.com/button)](https://vercel.com/import)
+
+---
+
+## 📄 License
+
+MIT License © 2025 Hung Truong
+
+---
+
+## 🙌 Acknowledgments
+
+- [BLAST.tv](https://www.blast.tv/) for the match data
+- [Chart.js](https://www.chartjs.org/)
+- The Counter-Strike community

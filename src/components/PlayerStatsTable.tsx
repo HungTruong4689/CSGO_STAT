@@ -20,7 +20,7 @@ export const PlayerStatsTable = ({ players }: { players: Player[] }) => {
         <thead className="bg-gray-700 text-left text-sm uppercase text-gray-300">
           <tr>
             <th className="px-4 py-2">Player</th>
-            <th className="px-4 py-2">Team</th>
+            <th className="px-4 py-2 text-center">Team</th>
             <th className="px-4 py-2">
               <div className="flex items-center gap-1">
                 <span>⚔️</span>
